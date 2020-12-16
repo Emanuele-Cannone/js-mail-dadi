@@ -23,7 +23,6 @@ addEventListener(" click " , player)
 
 //determina il vincitore sostituendo la classe ed aggiungendo il tensto nell'Id
 message = 'hai pareggiato!';
-document.getElementById('gioco').className = 'blue';
 if (player > pc){
   document.getElementById('gioco').className = 'verde';
   message = 'hai vinto!';
