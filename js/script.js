@@ -14,14 +14,25 @@ var player, pc;
 //creiamo un alert per il generatore del numero del player
 player = alert('Clicca ok per giocare');
 
+//le variabili devono assumere un numero casuale da 1 a 6 
 addEventListener(" click " , player)
   player = Math.floor(Math.random()* 6 + 1)
   pc = Math.floor(Math.random()* 6 + 1);
 
-//console.log(player, pc);
+console.log(player, pc);
+
+if (player > pc){
+  document.getElementById('gioco').className = 'verde';
+  document.getElementById('gioco').innerHTML = 'hai vinto!';
+  
+
+} else{
+  document.getElementById('gioco').className = 'rosso';
+  document.getElementById('gioco').innerHTML = 'Paga!';
+
+}
 
 
 
 
 
-//le variabili devono assumere un numero casuale da 1 a 6 

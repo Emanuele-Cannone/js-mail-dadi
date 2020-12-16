@@ -3,3 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h4{
+  text-transform: uppercase;
+}
+
+.verde{
+  color: green;
+  font-size: 20px;
+}
+
+.rosso{
+  color: red;
+  font-size: 20px;
+}
