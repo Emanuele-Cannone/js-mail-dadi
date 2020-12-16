@@ -6,14 +6,13 @@
 
 h4{
   text-transform: uppercase;
+  font-size: 20px;
 }
 
 .verde{
   color: green;
-  font-size: 20px;
 }
 
 .rosso{
   color: red;
-  font-size: 20px;
 }
