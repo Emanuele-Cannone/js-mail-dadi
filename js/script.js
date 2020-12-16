@@ -5,7 +5,7 @@
 
 
 //crea un alert per far generare un numero
-// solo a quel punto (cioè quando si preme l'ok dell'alert) fai generare il numero al pc - confronta i numeri - determina il vincitore e restituisci un messaggio
+// solo a quel punto (cioè quando si preme l'ok dell'alert) fai generare i numeri al pc - confronta i numeri - determina il vincitore e restituisci un messaggio
 
 
 //dichiariamo le variabili
@@ -21,12 +21,17 @@ addEventListener(" click " , player)
 
 //console.log(player, pc);
 
+
+
 if (player > pc){
   document.getElementById('gioco').className = 'verde';
   document.getElementById('gioco').innerHTML = 'hai vinto!';
-} else{
+} else if (player < pc) {
   document.getElementById('gioco').className = 'rosso';
   document.getElementById('gioco').innerHTML = 'Paga!';
+} else {
+  document.getElementById('gioco').className = 'blu';
+  document.getElementById('gioco').innerHTML = 'hai pareggiato!';
 }
 
 
