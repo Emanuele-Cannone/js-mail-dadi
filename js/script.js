@@ -3,7 +3,6 @@
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 
-
 //crea un alert per far generare un numero
 // solo a quel punto (cioè quando si preme l'ok dell'alert) fai generare i numeri al pc - confronta i numeri - determina il vincitore e restituisci un messaggio
 
@@ -22,17 +21,18 @@ addEventListener(" click " , player)
 //console.log(player, pc);
 
 
-
+//determina il vincitore sostituendo la classe ed aggiungendo il tensto nell'Id
+message = 'hai pareggiato!';
+document.getElementById('gioco').className = 'blue';
 if (player > pc){
   document.getElementById('gioco').className = 'verde';
-  document.getElementById('gioco').innerHTML = 'hai vinto!';
+  message = 'hai vinto!';
 } else if (player < pc) {
   document.getElementById('gioco').className = 'rosso';
-  document.getElementById('gioco').innerHTML = 'Paga!';
-} else {
-  document.getElementById('gioco').className = 'blu';
-  document.getElementById('gioco').innerHTML = 'hai pareggiato!';
-}
+  message = 'Paga!';
+} 
+
+document.getElementById('gioco').innerHTML = message;
 
 
 
